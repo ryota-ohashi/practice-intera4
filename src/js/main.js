@@ -19,6 +19,7 @@ class Intera4 {
       x: () => -(this.elList.clientWidth - this.elWrapper.clientWidth),
       ease: 'none',
       scrollTrigger: {
+        markers: true,
         trigger: this.elTrigger,
         start: '50% 50%',
         end: () => `+=${this.elList.clientWidth - this.elWrapper.clientWidth}`,
